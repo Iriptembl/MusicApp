@@ -8,8 +8,8 @@ namespace MusicApp.Models
         [Required(ErrorMessage = "Can not be empty.")]
         [Display(Name = "Artist")]
         public string ArtistName { get; set; } = null!;
-        public DataType ArtistBirthday { get; set; }
-        public DataType? ArtistDeathday { get; set; }
+        public DateTime ArtistBirthday { get; set; }
+        public DateTime? ArtistDeathday { get; set; }
 
         public int CountryId { get; set; }
         public virtual Country Country { get; set; }
